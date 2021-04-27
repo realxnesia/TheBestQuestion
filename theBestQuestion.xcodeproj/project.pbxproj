@@ -14,6 +14,17 @@
 		70E3AD1A2637AAF9000360FD /* theBestQuestion.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AD182637AAF9000360FD /* theBestQuestion.xcdatamodeld */; };
 		70E3AD1C2637AAF9000360FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD1B2637AAF9000360FD /* Assets.xcassets */; };
 		70E3AD1F2637AAF9000360FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD1D2637AAF9000360FD /* LaunchScreen.storyboard */; };
+		70E3AD282637B783000360FD /* Pertanyaan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AD272637B783000360FD /* Pertanyaan.swift */; };
+		70E3AD372637C9F1000360FD /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD2F2637C9F1000360FD /* alarm_sound.mp3 */; };
+		70E3AD382637C9F1000360FD /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD302637C9F1000360FD /* A.wav */; };
+		70E3AD392637C9F1000360FD /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD312637C9F1000360FD /* C.wav */; };
+		70E3AD3A2637C9F1000360FD /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD322637C9F1000360FD /* B.wav */; };
+		70E3AD3B2637C9F1000360FD /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD332637C9F1000360FD /* F.wav */; };
+		70E3AD3C2637C9F1000360FD /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD342637C9F1000360FD /* G.wav */; };
+		70E3AD3D2637C9F1000360FD /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD352637C9F1000360FD /* E.wav */; };
+		70E3AD3E2637C9F1000360FD /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 70E3AD362637C9F1000360FD /* D.wav */; };
+		70E3AD412637D9F9000360FD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AD402637D9F9000360FD /* HomeViewController.swift */; };
+		70E3AD442637DC73000360FD /* AddStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AD432637DC73000360FD /* AddStoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +37,17 @@
 		70E3AD1B2637AAF9000360FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70E3AD1E2637AAF9000360FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70E3AD202637AAF9000360FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70E3AD272637B783000360FD /* Pertanyaan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pertanyaan.swift; sourceTree = "<group>"; };
+		70E3AD2F2637C9F1000360FD /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		70E3AD302637C9F1000360FD /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		70E3AD312637C9F1000360FD /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		70E3AD322637C9F1000360FD /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		70E3AD332637C9F1000360FD /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		70E3AD342637C9F1000360FD /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		70E3AD352637C9F1000360FD /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		70E3AD362637C9F1000360FD /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		70E3AD402637D9F9000360FD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		70E3AD432637DC73000360FD /* AddStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +85,30 @@
 				70E3AD132637AAF9000360FD /* ViewController.swift */,
 				70E3AD152637AAF9000360FD /* Main.storyboard */,
 				70E3AD1B2637AAF9000360FD /* Assets.xcassets */,
+				70E3AD2E2637C9F1000360FD /* Sounds */,
 				70E3AD1D2637AAF9000360FD /* LaunchScreen.storyboard */,
 				70E3AD202637AAF9000360FD /* Info.plist */,
 				70E3AD182637AAF9000360FD /* theBestQuestion.xcdatamodeld */,
+				70E3AD272637B783000360FD /* Pertanyaan.swift */,
+				70E3AD402637D9F9000360FD /* HomeViewController.swift */,
+				70E3AD432637DC73000360FD /* AddStoryViewController.swift */,
 			);
 			path = theBestQuestion;
+			sourceTree = "<group>";
+		};
+		70E3AD2E2637C9F1000360FD /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				70E3AD2F2637C9F1000360FD /* alarm_sound.mp3 */,
+				70E3AD302637C9F1000360FD /* A.wav */,
+				70E3AD312637C9F1000360FD /* C.wav */,
+				70E3AD322637C9F1000360FD /* B.wav */,
+				70E3AD332637C9F1000360FD /* F.wav */,
+				70E3AD342637C9F1000360FD /* G.wav */,
+				70E3AD352637C9F1000360FD /* E.wav */,
+				70E3AD362637C9F1000360FD /* D.wav */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +168,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E3AD3E2637C9F1000360FD /* D.wav in Resources */,
+				70E3AD3D2637C9F1000360FD /* E.wav in Resources */,
+				70E3AD3C2637C9F1000360FD /* G.wav in Resources */,
+				70E3AD392637C9F1000360FD /* C.wav in Resources */,
 				70E3AD1F2637AAF9000360FD /* LaunchScreen.storyboard in Resources */,
 				70E3AD1C2637AAF9000360FD /* Assets.xcassets in Resources */,
+				70E3AD3A2637C9F1000360FD /* B.wav in Resources */,
+				70E3AD372637C9F1000360FD /* alarm_sound.mp3 in Resources */,
+				70E3AD382637C9F1000360FD /* A.wav in Resources */,
 				70E3AD172637AAF9000360FD /* Main.storyboard in Resources */,
+				70E3AD3B2637C9F1000360FD /* F.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,10 +189,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E3AD442637DC73000360FD /* AddStoryViewController.swift in Sources */,
 				70E3AD142637AAF9000360FD /* ViewController.swift in Sources */,
 				70E3AD102637AAF9000360FD /* AppDelegate.swift in Sources */,
 				70E3AD122637AAF9000360FD /* SceneDelegate.swift in Sources */,
 				70E3AD1A2637AAF9000360FD /* theBestQuestion.xcdatamodeld in Sources */,
+				70E3AD282637B783000360FD /* Pertanyaan.swift in Sources */,
+				70E3AD412637D9F9000360FD /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
