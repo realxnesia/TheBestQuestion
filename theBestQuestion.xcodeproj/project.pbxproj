@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7038F297263C0C3700C4F89C /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7038F296263C0C3700C4F89C /* AddCategoryViewController.swift */; };
+		70A3F286263C3D9700768A6D /* StoryQuestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A3F285263C3D9700768A6D /* StoryQuestViewController.swift */; };
+		70AD82CB263BFB580082EB7C /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AD82CA263BFB580082EB7C /* NewViewController.swift */; };
 		70E3AD102637AAF9000360FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AD0F2637AAF9000360FD /* AppDelegate.swift */; };
 		70E3AD122637AAF9000360FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AD112637AAF9000360FD /* SceneDelegate.swift */; };
 		70E3AD142637AAF9000360FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E3AD132637AAF9000360FD /* ViewController.swift */; };
@@ -28,6 +31,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7038F296263C0C3700C4F89C /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
+		70A3F285263C3D9700768A6D /* StoryQuestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryQuestViewController.swift; sourceTree = "<group>"; };
+		70AD82CA263BFB580082EB7C /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		70E3AD0C2637AAF9000360FD /* theBestQuestion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = theBestQuestion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E3AD0F2637AAF9000360FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70E3AD112637AAF9000360FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +67,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70A3F289263C40CF00768A6D /* AddData */ = {
+			isa = PBXGroup;
+			children = (
+				70E3AD432637DC73000360FD /* AddStoryViewController.swift */,
+				7038F296263C0C3700C4F89C /* AddCategoryViewController.swift */,
+			);
+			path = AddData;
+			sourceTree = "<group>";
+		};
+		70A3F28C263C410E00768A6D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				70E3AD402637D9F9000360FD /* HomeViewController.swift */,
+				70A3F285263C3D9700768A6D /* StoryQuestViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		70E3AD032637AAF9000360FD = {
 			isa = PBXGroup;
 			children = (
@@ -90,8 +114,9 @@
 				70E3AD202637AAF9000360FD /* Info.plist */,
 				70E3AD182637AAF9000360FD /* theBestQuestion.xcdatamodeld */,
 				70E3AD272637B783000360FD /* Pertanyaan.swift */,
-				70E3AD402637D9F9000360FD /* HomeViewController.swift */,
-				70E3AD432637DC73000360FD /* AddStoryViewController.swift */,
+				70AD82CA263BFB580082EB7C /* NewViewController.swift */,
+				70A3F289263C40CF00768A6D /* AddData */,
+				70A3F28C263C410E00768A6D /* Main */,
 			);
 			path = theBestQuestion;
 			sourceTree = "<group>";
@@ -191,9 +216,12 @@
 			files = (
 				70E3AD442637DC73000360FD /* AddStoryViewController.swift in Sources */,
 				70E3AD142637AAF9000360FD /* ViewController.swift in Sources */,
+				7038F297263C0C3700C4F89C /* AddCategoryViewController.swift in Sources */,
 				70E3AD102637AAF9000360FD /* AppDelegate.swift in Sources */,
+				70AD82CB263BFB580082EB7C /* NewViewController.swift in Sources */,
 				70E3AD122637AAF9000360FD /* SceneDelegate.swift in Sources */,
 				70E3AD1A2637AAF9000360FD /* theBestQuestion.xcdatamodeld in Sources */,
+				70A3F286263C3D9700768A6D /* StoryQuestViewController.swift in Sources */,
 				70E3AD282637B783000360FD /* Pertanyaan.swift in Sources */,
 				70E3AD412637D9F9000360FD /* HomeViewController.swift in Sources */,
 			);

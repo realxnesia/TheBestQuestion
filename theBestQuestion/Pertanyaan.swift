@@ -8,13 +8,15 @@
 import Foundation
 
 struct Pertanyaan {
+    let title: String
     let text: String
     let answers: String
     let opsi1: String
     let opsi2: String
     let opsi3: String
     
-    init(q: String, a: String, opt1: String, opt2: String, opt3: String) {
+    init(tl: String, q: String, a: String, opt1: String, opt2: String, opt3: String) {
+        title = tl
         text = q
         answers = a
         opsi1 = opt1

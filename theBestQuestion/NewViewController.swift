@@ -8,7 +8,7 @@
 //import UIKit
 //import AVFoundation
 //
-//class ViewController: UIViewController {
+//class NewViewController: UIViewController {
 //    var player: AVAudioPlayer?
 //
 //    @IBOutlet weak var judulLabel: UILabel!
@@ -20,7 +20,7 @@
 //    @IBOutlet weak var buttonPlay: UIButton!
 //    
 //    var idx : Int?
-//    var sendKategori : DbStory?
+//    //var sendKategori : DbStory?
 //    
 //    let pertanyaan = [
 //        Pertanyaan(tl: "Story 2: Sering Online", q: "Kamu sedang berada di keramaian, lalu ingin berkenalan. Apa yang harus kamu katakan?", a: "Hallo", opt1: "Hallo", opt2: "Beb, kok kamu berubah si. Aku tahu belakangan ini kamu sibuk kerja. Tapi aku minta waktunya dong Boleh ga?", opt3: "Beb, kamu biasanyakan menyempatkan waktu weekend sama aku. Belakangan ini kita udah jarang. Mau ga kita lakuin kaya dulu lagi?"),
@@ -50,7 +50,8 @@
 //    @IBAction func buttonAnswerPressed(_ sender: UIButton) {
 //        //MARK: Cek jawaban
 //        let userAnswer = sender.currentTitle
-//        let answerRight = pertanyaan[pertanyaanKe].answers
+//        //let answerRight = pertanyaan[pertanyaanKe].answers
+//        let answerRight = sendKategori?.answer
 //        
 //        if userAnswer == answerRight{
 //            print("right")
@@ -77,18 +78,18 @@
 //        view.backgroundColor = #colorLiteral(red: 0.1529411765, green: 0.1803921569, blue: 0.2901960784, alpha: 1)
 //        //questionLabel.textColor =
 //        
-//        judulLabel.text = pertanyaan[pertanyaanKe].title
-//        //judulLabel.textColor = .white
-//        questionLabel.text = pertanyaan[pertanyaanKe].text
-//        let ans1 = pertanyaan[pertanyaanKe].opsi1
-//        let ans2 = pertanyaan[pertanyaanKe].opsi2
-//        let ans3 = pertanyaan[pertanyaanKe].opsi3
+//        judulLabel.text = sendKategori?.judulStory
+//        questionLabel.text = sendKategori?.question
+//        let ans1 = sendKategori?.option1
+//        let ans2 = sendKategori?.option2
+//        let ans3 = sendKategori?.option3
+//        
 //        optionAns1.setTitle(ans1, for: .normal)
 //        optionAns2.setTitle(ans2, for: .normal)
 //        optionAns3.setTitle(ans3, for: .normal)
 //        
 //        //MARK: ProgressNow
-//        let tempProgress = Float(pertanyaanKe + 1) / Float(pertanyaan.count) 
+//        let tempProgress = Float(pertanyaanKe + 1) / Float(pertanyaan.count)
 //        progressNow.progress = tempProgress
 //    }
 //    

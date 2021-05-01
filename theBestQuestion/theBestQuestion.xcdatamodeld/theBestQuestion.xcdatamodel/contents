@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="listOfCategory" optional="YES" attributeType="String"/>
+        <relationship name="childStory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="parentCategory" inverseEntity="Story"/>
+    </entity>
+    <entity name="Story" representedClassName="Story" syncable="YES" codeGenerationType="class">
+        <attribute name="answer" optional="YES" attributeType="String"/>
+        <attribute name="option1" optional="YES" attributeType="String"/>
+        <attribute name="option2" optional="YES" attributeType="String"/>
+        <attribute name="option3" optional="YES" attributeType="String"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+        <attribute name="story" optional="YES" attributeType="String"/>
+        <attribute name="tittleStory" optional="YES" attributeType="String"/>
+        <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="childStory" inverseEntity="Category"/>
+    </entity>
+    <elements>
+        <element name="Story" positionX="140.8319702148438" positionY="20.18353271484375" width="128" height="163"/>
+        <element name="Category" positionX="-36" positionY="63" width="128" height="73"/>
+    </elements>
 </model>
