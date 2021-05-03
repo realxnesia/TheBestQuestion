@@ -13,8 +13,7 @@ class AddStoryViewController: UIViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     //MARK: Menampung data dari coredata
-    var arrayOfStory: [Story] = []
-    //var rcvKategori : DbStory? //namung data yg dikirim sague
+    var arrayOfStory = [Story]()
     var selectedCategory: Category?
     
 
@@ -35,6 +34,7 @@ class AddStoryViewController: UIViewController {
         printData()
 
     }
+    
     func saveData() {
         do {
             try context.save()
@@ -46,6 +46,8 @@ class AddStoryViewController: UIViewController {
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         let createStory = Story(context: context) //kok gabisa ya?
         
+        //MARK: Masukin data ke CoreData (WAJIB KARENA PAKAI RELATIONSHIP)
+        createStory.parentCategory = selectedCategory
         //MARK: Masukin data ke CoreData
         createStory.tittleStory = titleLable.text
         createStory.story = storyLabel.text
@@ -54,8 +56,6 @@ class AddStoryViewController: UIViewController {
         createStory.option1 = option1label.text
         createStory.option2 = option2Label.text
         createStory.option3 = option3Label.text
-        //MARK: Masukin data ke CoreData (WAJIB KARENA PAKAI RELATIONSHIP)
-        createStory.parentCategory = selectedCategory
         
         saveData()
         //dismiss(animated: true, completion:nil )
@@ -87,6 +87,7 @@ class AddStoryViewController: UIViewController {
     
     func printData(){
         for story in arrayOfStory{
+            print("====Start====")
             print("Title story : \(story.tittleStory)")
             print("story : \(story.story)")
             print("question : \(story.question)")
@@ -94,6 +95,7 @@ class AddStoryViewController: UIViewController {
             print("option1 : \(story.option1)")
             print("option2 : \(story.option2)")
             print("option3 : \(story.option3)")
+            print("")
         }
         print("=========")
         print(arrayOfStory.count)

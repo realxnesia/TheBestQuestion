@@ -10,40 +10,44 @@ import CoreData
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
-    //var segmentCounter = 1
-    
     @IBOutlet weak var tableCategory: UITableView!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    //var kumpulanStory: [DbStory] = []
-    var arrayOfCategory: [Category]! //hanya nyimpen by kategori
-    //var sendIndex: Int?
-    //var storyyy: Category?
-    
-//    var groupedKategori:[[Category]] = [[]]
-//    var tempListKategori:[Category] = []
+    var arrayOfCategory = [Category]()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableCategory.delegate = self
         tableCategory.dataSource = self
+        viewHome()
         
         getCategoryFromCoreData()
 
     }
     
-    func getCategoryFromCoreData(){
-            do {
-                self.arrayOfCategory = try context.fetch(Category.fetchRequest())
-                DispatchQueue.main.async {
-                    self.tableCategory.reloadData()
-                }
-            } catch  {
-            }
-        }
+    func viewHome(){
+        tableCategory.backgroundColor = UIColor.clear
+    }
     
+    func getCategoryFromCoreData(){
+//        do {
+//            self.arrayOfCategory = try context.fetch(Category.fetchRequest())
+//            DispatchQueue.main.async {
+//                self.tableCategory.reloadData()
+//            }
+//        } catch  {
+//        }
+        do{
+            arrayOfCategory = try context.fetch(Category.fetchRequest())
+        }catch{
+        }
+        
+        do {
+            try context.save()
+        } catch {
+        }
+    }
+        
     
     //MARK: Setting table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,6 +65,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     //MARK: Klik table (delegate methode)
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "goToStory", sender: self)
+        
+        //MARK: Navigation
+//        let vc = StoryQuestViewController()
+//        vc.navigationItem.largeTitleDisplayMode = .never
+        
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -68,6 +78,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let destinationVC = segue.destination as! StoryQuestViewController
             if let indexPath = tableCategory.indexPathForSelectedRow{
                 destinationVC.selectedCategory = arrayOfCategory[indexPath.row]
+                //destinationVC.kategoriApetu = String(arrayOfCategory[indexPath.row])
             }
         }
     }
