@@ -163,8 +163,8 @@ class StoryQuestViewController: UIViewController {
  */
         //indexQuestion -= 1
         
-        if indexQuestion+1 % arrayOfStory.count >= 0{
-            indexQuestion -= 1
+        if indexQuestion+1 % arrayOfStory.count > 1{
+            indexQuestion -= 1 //bug ketika indexQuestion = 0 + 1
         }else{
             let temp = arrayOfStory.count - 1 //3 - 1 = 2
             indexQuestion = temp //2
@@ -189,6 +189,6 @@ class StoryQuestViewController: UIViewController {
  1. Buat navigation bar(big tittle dan seterusnya),
  2. Index masih out of range(FIXED),
  3. Tambahin musik suara VN,
- 4. Bug previous page
+ 4. Bug previous page (FIXED)
  */
 

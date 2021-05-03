@@ -166,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="1065" y="-594"/>
         </scene>
-        <!--NavTitle-->
+        <!--Story Quest View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="StoryQuestViewController" customModule="theBestQuestion" customModuleProvider="target" sceneMemberID="viewController">
@@ -289,7 +289,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.15294117647058825" green="0.1803921568627451" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="NavTitle" largeTitleDisplayMode="never" id="Hmt-Lt-EOj">
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Hmt-Lt-EOj">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CaI-WM-hVz">
                             <connections>
                                 <segue destination="WaG-Bp-HOs" kind="show" identifier="goToAddStory" id="iwr-fL-b4c"/>
